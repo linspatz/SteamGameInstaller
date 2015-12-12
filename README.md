@@ -10,7 +10,7 @@ I built this off of Colingg's SteamBulkKeyActivator script. A updated version of
 
 ##Download 	
 
-![Release](https://raw.githubusercontent.com/colingg/SteamBulkKeyActivator/master/Recources/web/Releases.png)
+![Release](https://raw.githubusercontent.com/colingg/SteamBulkKeyActivator/master/Resources/Releases.png)
 
 [You can download the latest release over here](https://github.com/linspatz/SteamGameInstaller/releases)
 

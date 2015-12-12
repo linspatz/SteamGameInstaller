@@ -1,19 +1,3 @@
-;   Copyright 2014 colingg (colin.gg)
-;
-;   Licensed under the Apache License, Version 2.0 (the "License");
-;   you may not use this file except in compliance with the License.
-;   You may obtain a copy of the License at
-;
-;       http://www.apache.org/licenses/LICENSE-2.0
-;
-;  Unless required by applicable law or agreed to in writing, software
-;  distributed under the License is distributed on an "AS IS" BASIS,
-;  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-;  See the License for the specific language governing permissions and
-;  limitations under the License.
-
-
-
 ;Variables> 	http://ahkscript.org/docs/Variables.htm#Cursor
 ;Gendocs >   	https://github.com/fincs/GenDocs
 ;OutPutDebug 	http://www.autohotkey.com/docs/commands/OutputDebug.htm
@@ -72,35 +56,35 @@ steam_activate_key(key){ 					;method that takes a string variable (the key) and
 
 steam_click_next(){							;click the next button 
 	steam_activate_window()
-	MouseClick, left,  320,  575 ;click next
+	MouseClick, left,  320,  375 ;click next
 	applog("> clicked next 		[activation]")
 	Sleep,100
 	return
 }
 steam_click_cancel(){						;click the cancel button
 	steam_activate_window()
-	MouseClick, left,  422,  568 ;click cancel.
+	MouseClick, left,  422,  368 ;click cancel.
 	applog("> clicked cancel 	[activation]")
 	Sleep,100
 	return
 }
 steam_click_back(){							;click the back button
 	steam_activate_window()
-	MouseClick, left,  212,  568 ;click back
+	MouseClick, left,  212,  368 ;click back
 	applog("> clicked back 		[activation]")
 	Sleep,100
 	return
 }
 steam_click_print(){						;click the print button
 	steam_activate_window()
-	MouseClick, left,  221,  407 ;click print
+	MouseClick, left,  221,  280 ;click print
 	applog("> clicked print		[activation]")
 	Sleep,100
 	return
 }
 steam_install_click_back(){ 				;install window click back
 	steam_activate_install()
-	MouseClick, left,  212,  568 ;click back
+	MouseClick, left,  212,  368 ;click back
 	applog("> clicked back  	[install]")
 	Sleep,100
 	return
@@ -108,14 +92,14 @@ steam_install_click_back(){ 				;install window click back
 }
 steam_install_click_cancel(){ 				;install window click cancel
 	steam_activate_install()
-	MouseClick, left,  422,  568 ;click cancel.
+	MouseClick, left,  422,  368 ;click cancel.
 	applog("> clicked cancel 	[install]")
 	Sleep,100
 	return
 }
 steam_install_click_next(){ 				;install window click next
 	steam_activate_install()
-	MouseClick, left,  320,  575 ;click next
+	MouseClick, left,  320,  375 ;click next
 	applog("> clicked next 		[install]")
 	Sleep,100
 	return
@@ -228,11 +212,11 @@ steam_check_if_key_worked(){ 				;check if steam key worked
 			log_to_file(", 'new product' => 'false'",false)
 			;this means there is a print window & we closed it.
 		}
-		steam_click_next() ;we click next (past print screen)
+		steam_click_cancel() ;we click next (past print screen)
 		applog("now we need to check if we are on the install screen")
 		;in order to see if they key worked we need to check if we are on the install screen, if we are press cancel & report that the key worked
-		steam_check_if_on_install_screen()
-		steam_install_click_cancel()
+		;steam_check_if_on_install_screen()
+		;steam_install_click_cancel()
 
 	}
 }
@@ -336,5 +320,4 @@ applog("pressed escape!")
 applog(" ----- App End ------")
 ExitApp
 Return
-
 
