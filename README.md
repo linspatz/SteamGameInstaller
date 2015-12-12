@@ -1,25 +1,18 @@
-#Steam Bulk Key Activator
+#Steam Game Installer
 =====================
 
-## Activate keys in bulk
-######A little macro program that allows you to activate steam keys in bulk
+## Install games in bulk
+######A little macro program that allows you to install all your games
 
-Add a keys.txt file in the root directory of the binary/script.
-add 1 key per line and save the file.
-run the script/program and it will read line per line of the keys.txt file and activate them one by one in steam.
-After a successful activation it will cancel the game's installation so it does not install.
-	
-Do not touch keyboard and or mouse
-you can press escape at any time to cancel the macro
+I made this script after doing a new install of steam and finding that every single one of my games that I had copied over said they were uninstalled. The script goes through the installing process, either doing a full install of games you have never downloaded, or a rediscovery of files for games that have been downloaded. It took it roughly 12 hours to go through my 450 games, which may seem like a long time, but almost all of it was spent waiting on steam.
+
+I built this off of Colingg's SteamBulkKeyActivator script. A updated version of his script that currently works with steam is also avaible at following link (https://github.com/linspatz/SteamGameInstaller/releases)
 
 ##Download 	
 
 ![Release](https://raw.githubusercontent.com/colingg/SteamBulkKeyActivator/master/Recources/web/Releases.png)
 
-[You can download the latest release over here](https://github.com/colingg/SteamBulkKeyActivator/releases)
-
-##Demo
-![Demo](https://raw.githubusercontent.com/colingg/SteamBulkKeyActivator/master/Recources/web/demo.gif)
+[You can download the latest release over here](https://github.com/linspatz/SteamGameInstaller/releases)
 
 ##VAC anti-cheat concerns
 This is a script that uses Autohotkey to emulate keyboard and mouse, no reasons to be concerned about VAC. ;)
